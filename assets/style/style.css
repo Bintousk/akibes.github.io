@@ -1,0 +1,236 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+.address {
+  font-style: italic;
+  text-align: center;
+}
+a {
+  color: #73b504;
+  text-decoration: none;
+  border-bottom: #0b2d3d;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+article {
+  position: relative;
+  flex: 1;
+}
+
+.selected{
+  background-color: #d0ffb5;
+}
+
+
+.row {
+  display: flex;
+  margin: 0 -10px;
+  clear: both;
+  flex-wrap: wrap;
+}
+.row > .col {
+  padding: 0 10px;
+  flex: 1;
+}
+.contenue_header {
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.contenue_header a {
+  color: rgb(98, 82, 107);
+  
+  
+}
+
+.contenue_header li {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  margin-left: 20px;
+}
+.contenu_main {
+  position: relative;
+  max-width: 1200px;
+}
+.img_header {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+}
+.img_home {
+  position: absolute;
+  top: -22px;
+  right: 0px;
+}
+nav ul{
+  display: flex;
+  /* grid-template-columns: 25% 25% 25% 25%; */
+  /* background-color: #e6e6e6; */
+  column-gap: 10px;
+  /*display: table-cell;*/
+  text-align: center;
+  vertical-align: middle;
+}
+
+.active{
+  text-decoration: underline;
+  
+  /*margin-block : 10px;*/
+  border-radius: 4px;
+}
+/*ul > li{
+  display: flex;
+  justify-content: space-around;
+  
+}*/
+main {
+  max-width: 1200px;
+  padding: 0 20px;
+  margin: 0 auto 100px auto;
+  flex-wrap: wrap;
+}
+
+header {
+  height: 60px;
+  padding: 0 20px;
+  background-color: #e6dce3;
+  border-bottom: 1px solid #0b2d3d  ;
+}
+.contenu {
+  min-height: calc(100vh - 90px);
+}
+.footer {
+  font-family: fantasy;
+  height: 70px;
+  background-color: #eeeeee;
+  border-top: 1px #cccccc;
+}
+.footer_text {
+  padding: 30px 0 0 0;
+  text-align: center;
+}
+.btn {
+  color: white;
+  background-color: #66a103;
+  border: 1px #4d7902;
+  border-radius: 4px;
+  padding: 10px 10px;
+}
+.btn:hover {
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+  background-color: #80c904;
+}
+.recettes-type{
+  width: 100%;
+
+}
+.recettes-type button:not(.selected){
+  width: 25%;
+  height: 30px;
+  background-color: white; /* Green background */
+  border: 1px solid #999999; /* Green border */
+  color: black; /* White text */
+  padding: auto; /* Some padding */
+  /* cursor: pointer;  Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+}
+
+.selected{
+  background-color: #d0ffb5;
+  width: 25%;
+  height: 30px; /* Green background */
+  border: 1px solid #999999; /* Green border */
+  color: black; /* White text */
+  padding: auto; /* Some padding */
+  /* cursor: pointer;  Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+  
+}
+
+.recettes-type button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+/* Clear floats (clearfix hack) */
+.recettes-type:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Add a background color on hover */
+.recettes-type button:hover {
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+  background-color: #f3f3f3;
+}
+#recettes-list{
+  display: grid;
+  column-gap: 10px;
+  row-gap: 10px;
+  grid-template-columns: 50% 50% ;
+  background-color: #ffffff;
+  /* padding: 10px; */
+}
+.div-item{
+  /* display: block; */
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #999999;
+  border-radius: 4px;
+  padding: 10px; 
+  
+  text-align: center;
+}
+.div-item:hover{
+  background-color: #f3f3f3;
+  cursor: pointer;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+
+}
+.div-item img{
+  max-width: 100%;
+}
+.titre-recette{
+  color: #000000;
+  text-align: left;
+}
+.float-droite{
+  color: #000000;
+  text-align: right;
+}
+.haut-trouver-recette{
+  display: flex;
+  justify-content: space-between;
+}
+.div-item a{
+  color: #000000;
+  text-decoration: none;
+}
+.div-item a:hover{
+  text-decoration: underline;
+}
+/* Contact info container */
+.contact-info {
+  padding: 20px 0;
+  margin: 40px 0 0 0;
+  text-align: center;
+  border: 1px solid #999;
+  border-radius: 8px;
+}
+.contact-info i {
+  margin-bottom: 10px;
+}
+ 
